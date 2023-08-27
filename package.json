@@ -1,0 +1,27 @@
+{
+  "name": "hz-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm --filter @package/hz-ui build",
+    "dev": "pnpm run --filter play dev",
+    "docs:build": "pnpm run --filter play build",
+    "pub":"pnpm build && pnpm publish --filter hz-ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "ant-design-vue": "^4.0.1",
+    "less": "^4.2.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue": "^3.2.36"
+  },
+  "dependencies": {
+    "vite-plugin-dts": "^3.5.2"
+  }
+}

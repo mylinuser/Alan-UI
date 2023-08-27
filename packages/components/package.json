@@ -1,0 +1,29 @@
+{
+  "name": "@hz-ui/components",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc",
+    "preview": "vite preview",
+    "tsc": "vue-tsc"
+  },
+  "dependencies": {
+    "@hz-ui/utils": "workspace:^",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ]
+}
