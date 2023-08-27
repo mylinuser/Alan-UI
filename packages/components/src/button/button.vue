@@ -1,19 +1,26 @@
-<script setup lang="ts">
-import { Button } from "ant-design-vue";
-import { SearchOutlined } from "@ant-design/icons-vue";
-// import "ant-design-vue/dist/antd.css";
-</script>
+
 
 <template>
-  <Button>
+  <a-button>
     <template #icon><SearchOutlined /></template>
     <slot></slot>
-  </Button>
+  </a-button>
 </template>
+
+<script>
+import { Button } from "ant-design-vue";
+import { SearchOutlined } from "@ant-design/icons-vue";
+
+export default {
+  components: {
+    AButton: Button,
+    SearchOutlined
+  },
+}
+</script>
 
 <style lang="less" scoped>
 body {
-font-size: 20px;
+  font-size: 20px;
 }
 </style>
-
