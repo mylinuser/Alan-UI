@@ -4,25 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm --filter @hz-ui/components build && pnpm --filter @hz-ui/play build",
+    "build": "pnpm --filter @hz-ui/components build && pnpm --filter @hz-ui/play build && pnpm --filter @hz-ui/docs build",
     "dev": "pnpm run --filter @hz-ui/play dev",
     "play:build": "pnpm run --filter @hz-ui/play build",
+    "docs:dev": "pnpm run --filter @hz-ui/docs dev",
     "pub": "pnpm build && pnpm publish --filter hz-ui"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@ant-design/icons-vue": "^6.1.0",
     "@types/node": "^20.5.6",
-    "@vitejs/plugin-vue": "^4.2.3",
-    "ant-design-vue": "^4.0.1",
     "less": "^4.2.0",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5",
-    "vue": "^3.2.36"
-  },
-  "dependencies": {
-    "vite-plugin-dts": "^3.5.2"
+    "vue": "^3.3.1"
   }
 }

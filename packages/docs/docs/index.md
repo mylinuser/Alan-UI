@@ -5,7 +5,7 @@ title: HZ-UI
 titleTemplate: Vite & Vue Powered Static Site Generator
 
 hero:
-  name: HZ-UI
+  name: HZ-UI2
   text: Vite & Vue Powered Static Site Generator
   tagline: Simple, powerful, and fast. Meet the modern SSG framework you've always wanted.
   actions:
@@ -15,8 +15,8 @@ hero:
     - theme: alt
       text: View on GitHub
   image:
-    # src: /hz-icon.png
-    # alt: HZ-UI
+    src: /hz-icon.png
+    alt: HZ-UI
 
 features:
   - icon: 📝

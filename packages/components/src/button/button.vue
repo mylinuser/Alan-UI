@@ -7,16 +7,13 @@
   </a-button>
 </template>
 
-<script>
-import { Button } from "ant-design-vue";
+<script setup lang="ts">
+import { Button as AButton } from "ant-design-vue";
 import { SearchOutlined } from "@ant-design/icons-vue";
 
-export default {
-  components: {
-    AButton: Button,
-    SearchOutlined
-  },
-}
+defineOptions({
+  name: 'MyButton'
+})
 </script>
 
 <style lang="less" scoped>

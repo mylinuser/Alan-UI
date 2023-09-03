@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "vitepress dev docs --host",
+    "start": "vitepress dev docs --host --port 8899",
     "dev": "npm run start",
     "build": "vitepress build docs",
     "serve": "vitepress serve docs"
@@ -16,7 +16,9 @@
     "@babel/cli": "^7.22.10",
     "@babel/core": "^7.22.11",
     "@babel/preset-env": "^7.22.10",
-    "vitepress": "1.0.0-rc.5"
+    "vitepress": "1.0.0-rc.5",
+    "@ant-design/icons-vue": "^6.1.0",
+    "ant-design-vue": "^4.0.2"
   },
   "dependencies": {
     "@hz-ui/components": "workspace:^",

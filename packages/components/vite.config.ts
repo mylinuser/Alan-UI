@@ -12,12 +12,12 @@ export default defineConfig({
         index: resolve(__dirname, "./src/index.ts"),
       },
       formats: ["es"],
-      name: "test-ui",
+      name: "hz-ui",
     },
     minify: false,
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
-      external: ["vue", "ant-design-vue"],
+      external: ["vue"],
       output: {
         chunkFileNames: "common/[name].js",
         entryFileNames: (file) => {
