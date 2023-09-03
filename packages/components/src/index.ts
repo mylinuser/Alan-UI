@@ -1,8 +1,11 @@
 import type { App } from "vue";
 
-import * as components from "./components";
+import { MyButton } from "./button";
+export * from './button'
 
-export * from "./components";
+const components: Record<string, any> = {
+  MyButton
+}
 
 export const install = function (app: App) {
   Object.keys(components).forEach((key) => {

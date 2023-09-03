@@ -1,5 +1,6 @@
-import { version } from "../../package.json";
 import { componentPreview, containerPreview } from '@vitepress-demo-preview/plugin'
+import zhCNConfig from './zhCNConfig'
+import enUSConfig from './enUSConfig'
 
 module.exports = {
   appearance: true,
@@ -19,44 +20,30 @@ module.exports = {
       md.use(containerPreview)
     }
   },
-  // vite: {
-  //   plugins: [
-  //     vitepressDemo({
-  //       glob: ["**/demo/**/*.vue"],
-  //     }),
-  //   ],
-  //   css: {
-  //     preprocessorOptions: {
-  //       less: {
-  //         javascriptEnabled: true,
-  //       },
-  //     },
-  //   },
-  // },
+  locales: {
+    root: {
+      label: '简体中文',
+      lang: 'zh-CN',
+      link: '/',
+      themeConfig: zhCNConfig
+    },
+    'en-US': {
+      label: 'English',
+      lang: 'en-US',
+      link: '/en-US',
+      themeConfig: enUSConfig
+    },
+  },
   themeConfig: {
     siteTitle: "HZ UI",
-    // logo: "../public/hz-icon.png",
-    nav: [
-      { text: "首页", link: "/" },
-      { text: "指南", link: "/guide/getting-started" },
-      { text: "组件", link: "/components/Button.html" },
-      {
-        text: version,
-        items: [
-          {
-            text: "变更日志",
-            link: "/changelog/CHANGELOG.md",
-          },
-        ],
-      },
-    ],
-    sidebar: {
-      "/components/": [
-        {
-          text: "基础组件",
-          items: [{ text: "Button 按钮", link: "/components/Button" }],
-        },
-      ],
+    logo: "hz-icon.png",
+    editLink: {
+      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      text: 'Edit this page on GitHub'
     },
+    search: {
+      provider: 'local'
+    },
+    socialLinks: [{ icon: "github", link: "https://github.com" }],
   },
 };
